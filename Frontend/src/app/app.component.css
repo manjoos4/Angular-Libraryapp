@@ -1,0 +1,21 @@
+
+#mark{
+    color: rgb(73, 25, 25);
+    font: 1em Cursive;
+}
+h1 {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+color:rgb(255, 0, 0);
+}
+
+#bg {
+    /* The image used */
+   
+    /* Full height */
+    height: 100%;
+    /* Center and scale the image nicely */
+    color: black;
+    background-size: 100% ;  
+    background-size: cover; 
+    
+  }

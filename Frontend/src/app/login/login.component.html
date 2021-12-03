@@ -1,0 +1,27 @@
+    <div>
+<div class="row">
+<div class="col-md-6 mx-auto">
+    <span class="anchor" id="formLogin"></span>
+<div class="card rounded-0">
+<div class="card-header">
+<h3 class="mb-0" style="color:rgb(255, 0, 0);">Login</h3>
+</div>
+<div class="card-body">
+<form (ngSubmit)="loginUser()" >
+<div>
+    <label style="margin-left: 100px;" >Username</label>
+    <input style="margin-left: 20px;" type="text" name="uname" [(ngModel)]="user.uname">
+</div>
+<br>
+<div>
+    <label style="margin-left: 100px;" >Password</label>
+    <input style="margin-left: 24px;" type="password" name="password" [(ngModel)]="user.password">
+</div>
+<br>
+<button style="margin-left: 250px;" type="submit" class="btn btn-outline-danger">Submit</button>
+</form>
+</div>
+</div>
+</div>
+</div>
+</div>

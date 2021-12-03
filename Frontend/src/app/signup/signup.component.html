@@ -1,0 +1,33 @@
+
+<div>
+    <div class="row">
+        <div class="col-md-6 mx-auto">
+            <span class="anchor" id="formSignup"></span>
+        <div class="card rounded-0">
+<div class="card-header" >
+    <h3 class="mb-0" style="color:rgb(255, 0, 0);">Sign Up</h3>
+    </div>
+    
+    <div class="card-body">
+    <form  #usersignup="ngForm" (ngSubmit)="userverify()">
+    <div>
+    <label for="email">Email</label>
+    <input type="email" name="username" class="form-control" #email="ngModel" [(ngModel)]="user.username" [class.is-invalid]="email.invalid && email.touched" required pattern="^[a-z0-9.%+]+@[a-z0-9.-]+\.[a-z]{2,4}">
+    <small class="text-danger" [class.d-none]="email.valid || email.untouched">Enter valid EmailId</small>
+    </div>
+    <br>
+    <div>
+        <label for="password1">Password</label>
+        <input type="password" name="password" class="form-control" #passw="ngModel" [(ngModel)]="user.password" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{6,}$">
+        <small class="text-danger" [class.d-none]="passw.valid || passw.untouched">Password must contain one Uppercase, Lowercase, number and minimum length of 6
+        </small>
+    </div>
+      
+    <br>
+<button style="margin-left: 250px;" type="submit" class="btn btn-outline-danger">Sign Up</button>
+    
+    </form>
+    
+    </div>
+
+</div>
